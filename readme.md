@@ -1,6 +1,6 @@
 # laravel-elixir-imagemin-wrapper
 
-This is imagemin wrapper for Laravel Elixir 3.0. It is basically same with [nathan's implementation](https://github.com/nathanmac/laravel-elixir-imagemin), I just made it compatible with Elixir 3.0 and did some tweaks.
+This is imagemin wrapper for Laravel Elixir 3.0. It is basically the same with [nathan's implementation](https://github.com/nathanmac/laravel-elixir-imagemin), I just made it compatible with Elixir 3.0 and did some tweaks.
 
 ## Install
 
