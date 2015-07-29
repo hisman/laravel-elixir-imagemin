@@ -1,0 +1,30 @@
+{
+  "name": "laravel-elixir-imagemin-wrapper",
+  "version": "1.0.0",
+  "description": "Laravel Elixir 3.0 Wrapper for imagemin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hisman/laravel-elixir-imagemin-wrapper"
+  },
+  "keywords": [
+    "gulp",
+    "laravel",
+    "elixir",
+    "imagemin"
+  ],
+  "author": "Hisman Nata Saputra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hisman/laravel-elixir-imagemin-wrapper/issues"
+  },
+  "homepage": "https://github.com/hisman/laravel-elixir-imagemin-wrapper#readme",
+  "dependencies": {
+    "gulp-imagemin": "^2.3.0",
+    "imagemin-pngquant": "^4.1.2",
+    "underscore": "^1.8.3"
+  }
+}
