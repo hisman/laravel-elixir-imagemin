@@ -1,5 +1,7 @@
 var gulp   = require('gulp');
 var Elixir = require('laravel-elixir');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 var config = Elixir.config;
 
@@ -37,7 +39,7 @@ var _ = require('underscore');
             .pipe(gulp.dest(paths.output.baseDir))
         );
     })
-    .watch(config.get('assets.img') + '/**/*.+(jpg|jpeg|png|gif|svg)');
+    .watch(config.get('assets.imagePath') + '/**/*.+(jpg|jpeg|png|gif|svg)');
 });
 
 /**
@@ -48,9 +50,9 @@ var _ = require('underscore');
  * @return {object}
  */
 var prepGulpPaths = function(src, output) {
-    src = src || '**/*';
+    src = src || '/**/*.+(jpg|jpeg|png|gif|svg)';
 
     return new Elixir.GulpPaths()
-        .src(src, config.get('assets.img'))
-        .output(output || config.get('public.img'));
+        .src(src, config.get('assets.imagePath'))
+        .output(output || config.get('public.imagePath'));
 }
